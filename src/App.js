@@ -5,7 +5,7 @@ import Router from './components/Routes/Routes';
 
 export const App = function () {
   return (
-    <div >
+    <div>
         <Router></Router>
     </div>
   )

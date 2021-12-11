@@ -1,5 +1,5 @@
 import React from 'react';
- import '../../scss/style.scss';
+import '../../scss/style.scss';
 
 import about1 from '../../images/about/01.png';
 import avatar1 from '../../images/avatar/01.jpg';
@@ -12,9 +12,12 @@ import blog4 from '../../images/blog/04.jpg';
 import blog5 from '../../images/blog/05.jpg';
 import blog6 from '../../images/blog/06.jpg';
 import { MenuList } from '../../components/MenuList/MenuList';
-import { FooterList} from '../../components/FooterList/FooterList';
+import { FooterList } from '../../components/FooterList/FooterList';
 import { Pagination } from '../../components/Pagination/Pagination';
 import { Link } from 'react-router-dom';
+import { Contact } from '../../Data/ServicesData';
+// import { Personality } from '../Personality/Personality';
+
 export const HomePages = (props) => {
     return (
         <div>
@@ -58,9 +61,9 @@ export const HomePages = (props) => {
                                                 <h6 className="animated text-primary  mb-4" data-swiper-animation="fadeInUp" data-duration="1.5s" data-delay="0.25s">— Добро пожаловать на сайт Psycare</h6>
                                                 <h1 className="animated text-white display-6" data-swiper-animation="fadeInUp" data-duration="1.5s" data-delay="0.25s">Личные встречи, онлайн консультации, ответы по email в удобноe для вас время!</h1>
                                                 <p className="animated lead text-white display-9" data-swiper-animation="fadeInUp" data-duration="1.5s" data-delay="0.25s">С уважением и заботой к каждому клиенту</p>
-                                               
+
                                                 <Link className="animated4 btn btn-primary mt-2" data-swiper-animation="fadeInUp" data-duration="2.5s" data-delay="0.25s" to="/services">Подробнее</Link>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -76,9 +79,23 @@ export const HomePages = (props) => {
                 <div className="swiper-button-next" tabIndex="0" role="button" aria-label="Next slide"><i className="fas fa-chevron-right"></i></div>
             </div>
 
-           
-           
-<div><Pagination></Pagination></div>
+            <div className="space-ptb space-ptb-min">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-8 col-md-10 ">
+                            <div className="section-title text-center">
+                                <h2 className="title">Консультации</h2>
+                                <p className="lead"> Астролог нe предсказывает, а опираясь на сложный математический аппарат, консультирует клиента по возникающим вопросам в его жизни, помогает, опираясь на важные показатели в его карте, найти точку опоры, почувствовать уверенность в себе и разобраться как действовать в тех или иных жизненных ситуациях.</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                  
+                </div>
+
+            </div>
+
+            <div><Pagination></Pagination></div>
 
             {/*================================== Service */}
 
@@ -90,7 +107,7 @@ export const HomePages = (props) => {
                             <div className="section-title mb-0">
                                 <h2 className="title">Астролог Ирина <br></br> <span className="text-primary title">15 лет </span> успешной работы</h2>
                                 <p className="lead mb-6">Давайте знакомиться! Хочу рассказать о себе, своей семье, о том что сподвигло меня заниматься данным видом деятельности, успехах и достижениях в этой области!  </p>
-                                <Link className="btn-link" to="/" >Читать больше <i className="fas fa-chevron-right pl-2" ></i></Link>
+                                <Link className="btn-link" to="/personality" >Читать больше <i className="fas fa-chevron-right pl-2" ></i></Link>
                             </div>
                         </div>
                         <div className="col-md-4 order-md-1">
@@ -109,9 +126,9 @@ export const HomePages = (props) => {
                             <div className="position-relative px-xl-6">
                                 <i className="flaticon-call text-primary display-6"></i>
                                 <h4 className="text-white font-weight-normal mb-5 mt-4">
-                                    <span className="d-block text-primary">+7(916)339-10-19 </span>
+                                    <span className="d-block text-primary">{Contact.tel} </span>
                                 </h4>
-                                <a href="tel:=+79163391019" className="btn btn-primary">Позвонить</a>
+                                <a href={"tel:" + Contact.tel} className="btn btn-primary">Позвонить</a>
                             </div>
                         </div>
 
@@ -226,7 +243,8 @@ export const HomePages = (props) => {
                                         <textarea className="form-control" rows="4" placeholder="Сообщение"></textarea>
                                     </div>
                                     <div className="col-md-12">
-                                        <a className="btn btn-primary" href="#">Отправить</a>
+                                        <a className="btn btn-primary" href={"mailto:" + Contact.email}>Отправить</a>
+
                                     </div>
                                 </div>
                             </form>
@@ -478,17 +496,17 @@ export const HomePages = (props) => {
                 </div>
             </section>
 
-            
+
             {/* <!--=================================
 blog --> */}
 
 
+<div>
 
-
-<FooterList></FooterList>
+            <FooterList></FooterList>
 
         </div >
 
-
+        </div>
     )
 };

@@ -23,17 +23,37 @@
 .slide-bg-01 {
     background-image: url(../images/bg/01.jpg);
     background-size: cover;
+    // background-attachment: fixed;
 }
 
 .slide-bg-02 {
     background-image: url(../images/bg/02.jpg);
     background-size: cover;
+    // background-attachment: fixed;
 }
 .slide-bg-09 {
     background-image: url(../images/bg/09.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
+.slide-bg-17 {
+    background-image: url(../images/bg/17.jpg);
+    background-size: cover;
+   
+}
+
+.slide-bg-18 {
+    background-image: url(../images/bg/18.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide-bg-19 {
+    background-image: url(../images/bg/19.jpg);
+    background-size: cover;
+   
+}
 .lead-text {
     font-size: 1.5rem;
     color: rgb(250, 246, 246);
@@ -49,4 +69,20 @@
 
 .text-hover:hover {
     color:#1c045f !important;
+}
+.row-service {
+    display: flex;
+    justify-content: center;
+}
+
+.span-price:after {
+    content: "\20BD";
+} 
+
+.space-ptb-min {
+    padding: 100px 0px 0px 0px;
+}
+
+.space-ptb-app {
+    padding:  0px 0px 100px 0px ; 
 }

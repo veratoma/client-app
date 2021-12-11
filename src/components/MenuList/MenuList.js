@@ -3,12 +3,14 @@ import React from 'react';
 import {
   Link
 } from "react-router-dom";
+import { Contact } from '../../Data/ServicesData';
 
+import '../../scss/style.scss';
 
-export const MenuList = () => {
+export const MenuList = (props) => {
   return (
-
     <div>
+
       <header className="header">
         {/* Topbar */}
         <div className="topbar">
@@ -17,16 +19,16 @@ export const MenuList = () => {
               <div className="col-12">
                 <div className="d-block d-md-flex align-items-center text-center">
                   <div className="mr-3 d-inline-block">
-                    <a href="mailto:gethelp@psycare.com"><i className="far fa-envelope mr-2 fa-flip-horizontal"></i>levirina123@gmail.com</a>
+                    <a href={"mailto:" + Contact.email}><i className="far fa-envelope mr-2 fa-flip-horizontal"></i>{Contact.email}</a>
                   </div>
                   <div className="mr-auto d-inline-block">
-                    <a href="tel:=+79163391019"><i className="fa fa-phone mr-2 fa fa-flip-horizontal"></i>+7(916)339-10-19</a>
+                    <a href={"tel:" + Contact.tel}><i className="fa fa-phone mr-2 fa fa-flip-horizontal"></i>{Contact.tel}</a>
                   </div>
                   <div className="social d-inline-block">
                     <ul className="list-unstyled">
-                      <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://ru-ru.facebook.com//lrina.levandovskaya"><i className="fab fa-facebook-f"></i></a></li>
                       <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                      <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.instagram.com/lrina.levandovskaya"><i className="fab fa-instagram"></i></a></li>
                     </ul>
                   </div>
                 </div>
@@ -57,10 +59,7 @@ export const MenuList = () => {
                   <Link className="nav-link dropdown-toggle" to="../personality">Обо мне</Link>
 
                 </li>
-                <li className="nav-item dropdown">
-                  <Link className="nav-link dropdown-toggle" to="../guestion">Вопрос-Ответ</Link>
-                </li>
-
+                
               </ul>
             </div>
           </div>
