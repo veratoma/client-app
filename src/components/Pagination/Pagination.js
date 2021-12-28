@@ -1,7 +1,7 @@
 import React from 'react';
 import { ServData } from '../../Data/ServicesData';
 import { Link } from 'react-router-dom';
-
+import '../../scss/style.scss';
 
 export const Pagination = () => {
     return (

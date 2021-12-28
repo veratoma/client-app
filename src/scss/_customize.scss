@@ -86,3 +86,12 @@
 .space-ptb-app {
     padding:  0px 0px 100px 0px ; 
 }
+
+.item-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.author-color {
+    background-color: grey;
+}

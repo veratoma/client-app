@@ -11,6 +11,8 @@ import { Personality } from "../../Pages/Personality/Personality";
 import { NotFound } from "../../Pages/NotFound/NotFound";
 import { ServicesDetail } from "../../Pages/ServiceDetail/ServiceDetail";
 
+import { BlogDetail } from "../../Pages/BlogDetail/BlogDetail";
+
 export default function Router() {
   return (
     <BrowserRouter>
@@ -33,7 +35,7 @@ export default function Router() {
 
         </Route>
 
-        <Route path="/blog/:count" element={<Blog />}>
+        <Route path="/blog/:title" element={<BlogDetail />}>
 
         </Route>
 

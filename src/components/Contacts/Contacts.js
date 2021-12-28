@@ -1,6 +1,6 @@
 import React from 'react';
 import { Contact } from '../../Data/ServicesData';
-
+import '../../scss/style.scss';
 
 
 export const Contacts = () => {
@@ -16,7 +16,7 @@ export const Contacts = () => {
                         <h4 className="text-white font-weight-normal mb-5 mt-4">
                             <span className="d-block">
                                 Телефон:  <a href={"tel:" + Contact.tel} className="text-primary">{Contact.tel}</a>
-                                или
+                              
                             </span>
                             <span>
                                 Email:  <a href={"mailto:" + Contact.email}>{Contact.email}</a>

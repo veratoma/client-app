@@ -4,7 +4,7 @@ import {
   Link
 } from "react-router-dom";
 
-
+import '../../scss/style.scss';
 
 
 
@@ -30,7 +30,7 @@ export const MiniBanner = (props) => {
 
 
                 <Link className="breadcrumb-item" to="/">Главная</Link>
-                {isLink && <Link className="breadcrumb-item " to="../services"> <span>{props.title} </span></Link>}
+                {isLink && <Link className="breadcrumb-item " to={ "../" + props.url}> <span>{props.title} </span></Link>}
                 {isLink && <li className="breadcrumb-item active"><span>{props.text}</span></li>}
 
                 {!isLink && <li className="breadcrumb-item active"> <span>{props.title} </span></li>}

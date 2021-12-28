@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ServData } from '../../Data/ServicesData';
-
+import '../../scss/style.scss';
 
 
 export const FooterList = () => {
@@ -53,7 +53,7 @@ export const FooterList = () => {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-md-6 text-center copyright text-md-left mb-3 mb-md-0">
-                                <p className="mb-0 text-white"> &copy; Copyright <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a href="index.html"></a> Ирина </p>
+                                <p className="mb-0 text-white"> &copy; Copyright <span id="copyright"> </span> Все права защищены </p>
                             </div>
                             <div className="col-md-6 text-center text-md-right">
                                 <div className="social-icon">

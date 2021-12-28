@@ -18,7 +18,7 @@ export const ServicesDetail = () => {
     return (
         <div>
             <MenuList></MenuList>
-            <MiniBanner text={service.text} title={'Услуги'} ></MiniBanner>
+            <MiniBanner text={service.text} title={'Услуги'} url ={'services'}></MiniBanner>
             <ServicesDeployed service={service}></ServicesDeployed>
             <FooterList text={service.text}></FooterList>
         </div>)
