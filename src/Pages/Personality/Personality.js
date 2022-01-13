@@ -12,7 +12,7 @@ export const Personality = (props) => {
             <MenuList></MenuList>
             <MiniBanner title={'Обо Мне'}></MiniBanner>
 
-            <div className="space-ptb">
+            <div className='space-ptb-min'>
                 <div className="container">
                     <div className="row row-service">
                         <div className="col-lg-8 pl-lg-4 ">
@@ -51,8 +51,10 @@ export const Personality = (props) => {
                     </div>
                 </div>
             </div>
+
             <div><Pagination></Pagination></div>
-            <section class="space-ptb space-ptb-app">
+            
+            <section className='space-ptb-apppers'>
                 <div class="container">
                     <div class="row justify-content-center mb-5">
                         <div class="col-lg-6 col-md-10">

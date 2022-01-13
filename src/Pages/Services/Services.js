@@ -54,7 +54,7 @@ export function Services(props) {
                 </div >
 
                 <div>
-                    <div className="space-sm-ptb bg-primary bg-primary-height">
+                    <div className="space-sm-ptb bg-primary">
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-6 col-md-10 text-center">

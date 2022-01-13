@@ -54,7 +54,7 @@ export const Blog =
     {
         id: "blog-3",
         img: service3,
-        title: "From a small startup to a...",
+        title: "From a small startup to afjgj gjjhhj dkfkfg hjhjh fjgjgj",
         text: "Benjamin Franklin, inventor, statesman, writer, publisher and economist relates in his that early."
     },
     {

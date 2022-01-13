@@ -33,6 +33,19 @@ export const GalleryBlog = (props) => {
             }
         }
 
+        const trimTitle = (title) => {
+
+
+            for (let index = 20; index < title.length; index++) {
+    
+                if (title[index] === ' ') {
+    
+                    return title.substring(0, index)
+                }
+    
+            }
+        }
+
     return (
         <div>
             <div className="space-ptb">
@@ -48,7 +61,7 @@ export const GalleryBlog = (props) => {
                                             <img className="img-fluid" src={blog.img} alt="" />
                                         </div>
                                         <div className="blog-post-content">
-                                            <h6 className="blog-post-title"><Link to={blog.id}>{blog.title}</Link></h6>
+                                            <h6 className="blog-post-title"><Link to={blog.id}>{ trimTitle(blog.title)}</Link></h6>
                                            
                                             <p className="mb-0">{trimText(blog.text)}...</p>
                                          

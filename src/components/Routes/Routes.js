@@ -27,7 +27,7 @@ export default function Router() {
 
         </Route>
 
-        <Route path="/services/:text" element={<ServicesDetail />}>
+        <Route path="services/:text" element={<ServicesDetail />}>
 
         </Route>
 
@@ -35,7 +35,7 @@ export default function Router() {
 
         </Route>
 
-        <Route path="/blog/:title" element={<BlogDetail />}>
+        <Route path="blog/:title" element={<BlogDetail />}>
 
         </Route>
 

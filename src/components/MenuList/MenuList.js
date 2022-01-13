@@ -5,7 +5,9 @@ import {
 } from "react-router-dom";
 import { Contact } from '../../Data/ServicesData';
 
+
 import '../../scss/style.scss';
+
 
 export const MenuList = (props) => {
   return (
@@ -42,10 +44,13 @@ export const MenuList = (props) => {
         <nav className="navbar navbar-static-top navbar-expand-lg header-sticky">
           <div className="container">
             <button type="button" className="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse"><i className="fas fa-align-left"></i></button>
+            <a className="navbar-brand" href="index.html">
+            <img />
+          </a>
             <div className="navbar-collapse collapse justify-content-center">
               <ul className="nav navbar-nav">
                 <li className="nav-item dropdown active">
-                  <Link className="nav-link dropdown-toggle" id="navbarDropdo#wn" to="/">Главная</Link>
+                  <Link className="nav-link dropdown-toggle" id="navbarDropdo#wn"  to="/">Главная</Link>
 
                 </li>
                 <li className="dropdown nav-item">

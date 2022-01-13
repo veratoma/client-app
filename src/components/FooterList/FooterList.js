@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ServData } from '../../Data/ServicesData';
+import { Contact } from '../../Data/ServicesData';
 import '../../scss/style.scss';
 
 
@@ -30,8 +31,8 @@ export const FooterList = () => {
                                 <h5 className="text-primary">Контактная информация</h5>
                                 <ul className="list-unstyled mb-0">
                                     <li><i className="fas fa-fw fa-map-marker-alt text-primary"></i><span>г. Москва</span></li>
-                                    <li><i className="far fa-fw fa-envelope text-primary"></i><span>levirina123@gmail.com</span></li>
-                                    <li><i className="fas fa-fw fa-phone-alt text-primary"></i><a href="tel:=+7916391019"><span>+7(916)339-10-19</span></a></li>
+                                    <li><i className="far fa-fw fa-envelope text-primary"></i> <span ><a className='text-wite' href={"mailto:" + Contact.email}>{Contact.email}</a></span></li>
+                                    <li><i className="fas fa-fw fa-phone-alt text-primary"></i> <span ><a className='text-wite' href={"tel:" + Contact.tel}>{Contact.tel}</a></span></li>
                                 </ul>
                             </div>
                         </div>

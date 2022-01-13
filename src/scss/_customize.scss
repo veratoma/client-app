@@ -80,10 +80,13 @@
 } 
 
 .space-ptb-min {
-    padding: 100px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 .space-ptb-app {
+    padding:  0px 0px 50px 0px ; 
+}
+.space-ptb-apppers {
     padding:  0px 0px 100px 0px ; 
 }
 
@@ -93,5 +96,28 @@
 }
 
 .author-color {
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.7);
 }
+
+.author-marg {
+    margin-bottom: 80px;
+    
+}
+
+.author-pad {
+    padding-bottom: 0px;
+}
+
+.text-wite {
+    color: white;
+}
+
+.text-wite-marg {
+    margin-top: 200px;
+}
+
+.col-mp {
+    margin: 0;
+    padding: 0;
+}
+

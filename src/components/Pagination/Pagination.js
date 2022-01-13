@@ -6,7 +6,7 @@ import '../../scss/style.scss';
 export const Pagination = () => {
     return (
         <div>
-        <div className="space-ptb space-ptb-app">
+        <div className="space-ptb">
             <div className="container ">
               
                
