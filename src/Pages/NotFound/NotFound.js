@@ -22,14 +22,13 @@ export const NotFound = () => {
                                     <h3 class="text-white mb-3"> Извините, мы не можем найти эту страницу.</h3>
                                     <p class="lead text-white mb-4 mb-md-5">Страница, которую вы ищете, могла быть удалена или временно недоступна.</p>
                                     <Link className="btn btn-lg btn-primary" to="/">Главная</Link>
-                                    {/* <a class="btn btn-lg btn-primary" href="index.html">Back to Home</a> */}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-
+            
             <FooterList></FooterList>
         </div>
 

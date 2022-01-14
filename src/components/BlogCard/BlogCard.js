@@ -5,10 +5,7 @@ import { CarouselBlog } from '../CarouselBlog/CarouselBlog';
 
 
 export const BlogCard = (props) => {
-
-
     const card = props.blog
-
     const nextBlogId = props.nextBlogId;
     const prevBlogId = props.prevBlogId;
 
@@ -17,31 +14,19 @@ export const BlogCard = (props) => {
             <div className="space-ptb author-pad">
                 <div className="container">
                     <div className="row row-service">
-
-
-
                         <div className="col-lg-8">
                             <div className="blog-detail">
-
                                 <div className="blog-post">
                                     <div className="blog-post-image">
                                         <img className="img-fluid" src={card.img} alt="" />
-
-
                                     </div>
                                     <div className="blog-post-content">
-
-
                                         <h6 className="blog-post-title mb-0">{card.title}</h6>
                                     </div>
                                 </div>
-
                                 <div className="blog-post-description">
                                     <p className='author-marg'>{card.text}</p>
-
                                 </div>
-
-
 
 
                                 <div className="blog-post-navigation">
@@ -49,18 +34,14 @@ export const BlogCard = (props) => {
                                         <div className="nav-link">
                                             <div className="nav-previous">
                                                 <a href={prevBlogId}>
-
                                                     <i className="fas fa-chevron-left"></i>
                                                     <span className="pagi-text">Предыдущая</span>
-
                                                 </a>
-
                                             </div>
                                             <div className="nav-next">
                                                 <a href={nextBlogId}>
                                                     <i className="fas fa-chevron-right"></i>
                                                     <span className="pagi-text">Следующая</span>
-
                                                 </a>
                                             </div>
                                         </div>
@@ -69,7 +50,6 @@ export const BlogCard = (props) => {
 
                                 <div className="blog-post-author blog-author author-marg">
                                     <div className="author author-color">
-                                        
                                         <div className="author-detail">
                                             <h6 className="author-label">Ирина</h6>
                                             <span className="author-label">Астролог</span>
@@ -91,8 +71,6 @@ export const BlogCard = (props) => {
                                                     <li><a href="https://ru-ru.facebook.com//lrina.levandovskaya"><i className="fab fa-facebook-f"></i></a></li>
                                                     <li><a href="#"><i className="fab fa-twitter"></i></a></li>
                                                     <li><a href="https://www.instagram.com/lrina.levandovskaya"><i className="fab fa-instagram"></i></a></li>
-
-
                                                 </ul>
                                             </div>
                                         </div>
@@ -100,10 +78,7 @@ export const BlogCard = (props) => {
                                 </div>
                                 <div>
                                     < CarouselBlog></CarouselBlog>
-
                                 </div>
-
-
                             </div>
                         </div>
                     </div>

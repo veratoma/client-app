@@ -10,6 +10,10 @@ import service9 from '../images/service/09.jpg'
 import service10 from '../images/service/10.jpg'
 import service12 from '../images/service/12.jpg'
 import service13 from '../images/service/13.jpg'
+import avatar1 from '../images/avatar/01.jpg'
+import avatar2 from '../images/avatar/02.jpg'
+import avatar3 from '../images/avatar/03.jpg'
+
 
 export const ServData =
     [
@@ -29,12 +33,17 @@ export const ServData =
 
 
 
-
-
 export const Contact =
     { tel: '+7(916)339-10-19', email: 'levirina123@gmail.com' };
 
 
+
+    export const PersCont = [
+        {id:'tel', text:'Телефон', contact: '+7(916)339-10-19', icon:'flaticon-phone'}, 
+        {id:'email', text:'Email', contact: 'levirina123@gmail.com', icon:'flaticon-message' },
+        {id:'address', text:'Адрес', contact:'Россия, г. Москва', icon:'flaticon-pin' }
+    
+    ]
 
 
 
@@ -146,6 +155,30 @@ export const Blog =
         img: service3,
         title: "From a small startup to a...",
         text: "Benjamin Franklin, inventor, statesman, writer, publisher and economist relates in his that early."
-    },
+    }];
 
-    ]
+
+    export const Start =
+    [
+        {id: 'start1', title: 'Решение', icon: 'flaticon-icon-992595',  text: 'Решить какой вопрос вы хотите проработать, даже если его нет в озвученном на сайте списке услуг, это может быть любая тема или ряд мелких ситуаций требующих решения!', num: 1},
+        {id: 'start2', title: 'Обращение', icon: 'flaticon-mail',  text: 'Написать на электронную почту, позвонить или же связаться через  любой мессенджер (WhatsApp, Telegram, Instagram....) Для получения любого астрологического прогноза вам необходимо указать дату и точное время рождения!', num: 2},
+        {id: 'start3', title: 'Ответ', icon: 'flaticon-love-letter',  text: 'Вы получите развернутое описание на ваш запрос с наилучшими способами решения тех или иных задач в любой удобной для вас форме!', num: 3}
+
+    ];
+
+    export const Reviews = 
+    [
+        {id:'reviews1', name:'Alice Williams', text:' I dont always clop, but when I do, its because of Psycare. Web service saved my business. This is simply unbelievable!', profession:'- Manager', image: avatar1},
+        {id:'reviews2', name:'Alice Williams', text:' I dont always clop, but when I do, its because of Psycare. Web service saved my business. This is simply unbelievable!', profession:'- Manager', image: avatar2},
+        {id:'reviews3', name:'Alice Williams', text:' I dont always clop, but when I do, its because of Psycare. Web service saved my business. This is simply unbelievable!', profession:'- Manager', image: avatar3},
+    ];
+
+    
+ export const Astrology = 
+ [
+    {id: 'astr1', title: 'Натальная астрология', icon: 'flaticon-smartphone',  text: 'Дословно астрология рождения — один из главных разделов астрологии, занимающийся прогнозированием судьбы человека по гороскопу, составленному на место и время рождения человека. Натальная астрология отвечает на вопрос об общих тенденциях судьбы, позволяет определить круг событий, которые могут произойти с человеком, и круг событий, которые не могут быть никогда.', num: 1},
+    {id: 'astr2', title: 'Предсказательная астрология', icon: 'flaticon-mail',  text: 'Раздел астрологии, посвящённый событиям в жизни человека для заданного отрезка времени. Основным рабочим материалом предсказательной астрологии являются прогрессивные гороскопы — гороскопы, составленные по особым правилам относительно натального гороскопа и призванные описать события в жизни человека в тот или иной период жизни (обычно год).', num: 2},
+    {id: 'astr3', title: 'Синастрическая астрология', icon: 'flaticon-like',  text: 'Дословно «астрология совмещённых звёзд» — раздел астрологии, изучающий взаимодействие двух натальных гороскопов различных субъектов для изучения отношений между ними. Основным методом синастрического анализа является изучение синастрического гороскопа, получаемого путём перенесения элементов натального гороскопа одного субъекта в натальный гороскоп другого субъекта.', num: 3}
+
+];
+

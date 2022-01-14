@@ -7,8 +7,8 @@ const contentPerPage = 6
 const lastIndex = page * contentPerPage // 3
 const firstIndex = lastIndex - contentPerPage // 0
 
- 
-export const  usePagination = ({ contentPerPage, count }) => {
+
+export const usePagination = ({ contentPerPage, count }) => {
   const [page, setPage] = useState(1);
   // number of pages in total (total items / content on each page)
   const pageCount = Math.ceil(count / contentPerPage);

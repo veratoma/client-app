@@ -17,18 +17,17 @@ export const ServicesDeployed = (props) => {
                                     <h4 className="mb-4">{deployed.title}</h4>
                                     <p>{deployed.decryption}</p>
                                 </div>
-
                                 <div>
                                     <h4 className=" mt-4 mt-md-5 text-primary">
                                         Стоимость услуги: <span className="span-price"> {deployed.price} </span></h4>
 
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div><Contacts></Contacts></div>
 
 

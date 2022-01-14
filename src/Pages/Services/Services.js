@@ -3,22 +3,19 @@ import '../../scss/style.scss'
 import { MenuList } from '../../components/MenuList/MenuList';
 import { FooterList } from '../../components/FooterList/FooterList';
 import { MiniBanner } from '../../components/MiniBanner/MiniBanner';
-import { Contact, ServData } from '../../Data/ServicesData';
+import { Astrology, Contact, ServData } from '../../Data/ServicesData';
 import {
     Link
 } from "react-router-dom";
 
 
-
-
-
 export function Services(props) {
 
     return (
-
         <div>
             <MenuList></MenuList>
             <MiniBanner title={'Услуги'}></MiniBanner>
+
             <div>
                 <div className="space-pt space-sm-pb">
                     <div className="container">
@@ -45,10 +42,7 @@ export function Services(props) {
                                     </div>
 
                                 </div>
-                            )
-                            }
-
-
+                            )};
                         </div >
                     </div >
                 </div >
@@ -58,15 +52,13 @@ export function Services(props) {
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-6 col-md-10 text-center">
-                                    <div className="section-title">
+                                    <div>
                                         <h2 className="title text-white">Позвоните сейчас!</h2>
                                         <i className="flaticon-call display-6 text-white"></i>
                                         <a href={"tel:" + Contact.tel}>  <p className="lead text-white lead-services text-hover">{Contact.tel}</p></a>
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -84,25 +76,25 @@ export function Services(props) {
                         <div className="row">
                             <div className="col-lg-12">
                                 <ul className="feature-step-list mt-3">
-                                    {/* <!-- Feature-Step-01 START --> */}
-                                    <li>
+                                    {Astrology.map(astrology =>
+                            
+                                   
+                                    <li key={astrology.id}>
                                         <div className="feature-step text-center">
                                             <div className="feature-step-divider">
                                                 <div className="feature-step-icon">
-                                                    <span className="feature-step-number">1</span>
-                                                    <i className="flaticon-smartphone"></i>
+                                                    <span className="feature-step-number">{astrology.num}</span>
+                                                    <i className={astrology.icon}></i>
                                                 </div>
                                             </div>
                                             <div className="feature-info-content">
-                                                <h4 className="feature-info-title">Натальная  <br /> астрология </h4>
-                                                <p className="mb-0">Дословно астрология рождения — один из главных разделов астрологии, занимающийся прогнозированием судьбы человека по гороскопу, составленному на место и время рождения человека. Натальная астрология отвечает на вопрос об общих тенденциях судьбы, позволяет определить круг событий, которые могут произойти с человеком, и круг событий, которые не могут быть никогда. </p>
+                                                <h4 className="feature-info-title">{astrology.title} </h4>
+                                                <p className="mb-0">{astrology.text} </p>
                                             </div>
                                         </div>
                                     </li>
-                                    {/* <!-- Feature-Step-01 END --> */}
-
-                                    {/* <!-- Feature-Step-02 START --> */}
-                                    <li>
+                                    )};
+                                    {/* <li>
                                         <div className="feature-step text-center">
                                             <div className="feature-step-divider">
                                                 <div className="feature-step-icon">
@@ -118,8 +110,8 @@ export function Services(props) {
                                     </li>
                                     {/* <!-- Feature-Step-02 END --> */}
 
-                                    {/* <!-- Feature-Step-03 START --> */}
-                                    <li>
+                                    
+                                    {/* <li>
                                         <div className="feature-step text-center">
                                             <div className="feature-step-divider">
                                                 <div className="feature-step-icon">
@@ -131,8 +123,8 @@ export function Services(props) {
                                                 <h4 className="feature-info-title">Синастрическая астрология</h4>
                                                 <p className="mb-0">Дословно «астрология совмещённых звёзд» — раздел астрологии, изучающий взаимодействие двух натальных гороскопов различных субъектов для изучения отношений между ними. Основным методом синастрического анализа является изучение синастрического гороскопа, получаемого путём перенесения элементов натального гороскопа одного субъекта в натальный гороскоп другого субъекта. </p>
                                             </div>
-                                        </div>
-                                    </li>
+                                        </div> */} 
+                                    {/* </li> */}
                                     {/* <!-- Feature-Step-03 END --> */}
                                 </ul>
                             </div>

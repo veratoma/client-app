@@ -6,21 +6,18 @@ import { Link } from 'react-router-dom';
 
 
 export const CarouselBlog = (props) => {
-    const  trimText = (text) => {
+    const trimText = (text) => {
 
-           
         for (let index = 60; index < text.length; index++) {
 
             if (text[index] === ' ') {
-               
-               return text.substring (0,index)
+
+                return text.substring(0, index)
             }
-            
         }
     }
 
     const trimTitle = (title) => {
-
 
         for (let index = 20; index < title.length; index++) {
 
@@ -28,7 +25,6 @@ export const CarouselBlog = (props) => {
 
                 return title.substring(0, index)
             }
-
         }
     }
 
@@ -46,8 +42,8 @@ export const CarouselBlog = (props) => {
                     </div>
                     <div className="row">
                         <div className="col-lg-12">
-                            
-                                <div className="owl-carousel owl-nav-bottom-center" data-nav-dots="true" data-nav-arrow="false" data-items="3" data-md-items="2" data-sm-items="2" data-xs-items="1" data-space="30" data-autoheight="true">
+
+                            <div className="owl-carousel owl-nav-bottom-center" data-nav-dots="true" data-nav-arrow="false" data-items="3" data-md-items="2" data-sm-items="2" data-xs-items="1" data-space="30" data-autoheight="true">
                                 {Blog.map(blog => (
                                     <div className="item">
                                         <div className="blog-post">
@@ -60,17 +56,13 @@ export const CarouselBlog = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                    ))};
-
-                                </div>
-                            
+                                ))};
+                            </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
-       
+
     )
 };
