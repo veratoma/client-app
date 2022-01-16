@@ -14,7 +14,7 @@ export const Contacts = () => {
                             <div className="position-relative text-center ">
                                 <i className="flaticon-call text-primary display-6"></i>
                                 <h4 className="text-white font-weight-normal mb-5 mt-4">
-                                    <span className="d-block">
+                                    <span className="d-block d-block-marg">
                                         Телефон:  <a href={"tel:" + Contact.tel} className="text-primary">{Contact.tel}</a>
                                     </span>
                                     <span>

@@ -45,7 +45,8 @@ export const MenuList = (props) => {
             <a className="navbar-brand" href="index.html">
               <img />
             </a>
-            <div className="navbar-collapse collapse justify-content-center">
+            <div className="navbar-collapse collapse justify-content-end">
+              
               <ul className="nav navbar-nav">
                 <li className="nav-item dropdown active">
                   <Link className="nav-link dropdown-toggle" id="navbarDropdo#wn" to="/">Главная</Link>

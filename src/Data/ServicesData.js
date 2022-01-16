@@ -69,25 +69,25 @@ export const Blog =
     {
         id: "blog-4",
         img: service1,
-        title: "1",
+        title: "From a small startup to a...",
         text: "Benjamin Franklin, inventor, statesman, writer, publisher and economist relates in his that early."
     },
     {
         id: "blog-5",
         img: service2,
-        title: "2.",
+        title: "From a small startup to a...",
         text: "Benjamin Franklin, inventor, statesman, writer, publisher and economist relates in his that early."
     },
     {
         id: "blog-6",
         img: service3,
-        title: "3",
+        title: "From a small startup to a...",
         text: "Benjamin Franklin, inventor, statesman, writer, publisher and economist relates in his that early."
     },
     {
         id: "blog-7",
         img: service1,
-        title: "4",
+        title: "From a small startup to a...",
         text: "Benjamin Franklin, inventor, statesman, writer, publisher and economist relates in his that early."
     },
     {
