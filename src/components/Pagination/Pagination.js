@@ -16,7 +16,8 @@ export const Pagination = () => {
                                 {ServData.map(pagination =>
                                     <div key={pagination.id} className="item">
                                         <div className="service-style-01">
-                                            <img className="img-fluid" src={pagination.image} alt="" />
+                                            <img className="img-fluid" src={
+                                                pagination.image} alt="" />
                                             <div className="service-title">
                                                 <i className={pagination.icon}></i>
                                                 <Link to={"/services/" + pagination.link}>{pagination.text} </Link>
