@@ -1,0 +1,136 @@
+.bg-primary-height {
+    height: 300px;
+}
+
+.lead-services {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.blog-post-content-height {
+    height: 250px;
+}
+
+.row-new {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-to-top-home {
+    width: 60px;
+}
+
+.slide-bg-01 {
+    background-image: url(../images/bg/01.jpg);
+    background-size: cover;
+    // background-attachment: fixed;
+}
+
+.slide-bg-02 {
+    background-image: url(../images/bg/02.jpg);
+    background-size: cover;
+    // background-attachment: fixed;
+}
+.slide-bg-09 {
+    background-image: url(../images/bg/09.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide-bg-17 {
+    background-image: url(../images/bg/17.jpg);
+    background-size: cover;
+   
+}
+
+.slide-bg-18 {
+    background-image: url(../images/bg/18.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide-bg-19 {
+    background-image: url(../images/bg/19.jpg);
+    background-size: cover;
+   
+}
+.lead-text {
+    font-size: 1.5rem;
+    color: rgb(250, 246, 246);
+    margin-bottom: 20px;
+   
+} 
+
+.lead-name{
+    font-size: 1rem;
+    color: rgb(7, 7, 7);
+    margin-bottom: 0px;
+}
+
+.text-hover:hover {
+    color:#1c045f !important;
+}
+.row-service {
+    display: flex;
+    justify-content: center;
+}
+
+.span-price:after {
+    content: "\20BD";
+} 
+
+.space-ptb-min {
+    padding: 50px 0px 0px 0px;
+}
+
+.space-ptb-app {
+    padding:  0px 0px 50px 0px ; 
+}
+.space-ptb-apppers {
+    padding:  0px 0px 100px 0px ; 
+}
+
+.item-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.author-color {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.author-marg {
+    margin-bottom: 80px;
+    
+}
+
+.author-pad {
+    padding-bottom: 0px;
+}
+
+.text-wite {
+    color: white;
+    margin-top: 10px;
+}
+
+.text-wite-marg {
+    margin-top: 200px;
+}
+
+.col-mp {
+    margin: 0;
+    padding: 0;
+}
+
+.h2-mg {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+ .justify-content-end {
+     justify-content: flex-end;
+ }
+
+.d-block-marg {
+ margin-bottom: 10px;
+}
